@@ -1,0 +1,47 @@
+<html>
+<head> <title> Confirm </title>
+<link rel="stylesheet" type="text/css" href="newstyle.css">
+</head>
+
+<body>
+<fieldset>
+<legend>Επιβεβαιωστε:</legend>
+<table>
+<tr><td>ονομα:</td><td><p id="f"></p> </td><br></tr>
+<tr><td>τηλεφωνο:</td><td><p id="t"></p></td><br></tr>
+<tr><td>email:</td><td><p id="m"></p></td><br></tr>
+<tr><td>σχολια:</td><td><p id="s"></p></td><br></tr>
+</table>
+<button id="myButton" class="float-left submit-button" >back</button>
+<form action="mailto:mail@mail.com">
+    <input type="submit" value="confirm" />
+</form>
+</fieldset>
+
+<script type="text/javascript">
+			function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+var fn = getParameterByName('firstname');
+var tel = getParameterByName('tel');
+var mail = getParameterByName('mail');
+var spe = getParameterByName('spe');
+
+document.getElementById("f").innerHTML =fn;
+document.getElementById("t").innerHTML =tel;
+document.getElementById("m").innerHTML =mail;
+document.getElementById("s").innerHTML =spe;
+document.getElementById("myButton").onclick = function () {
+        location.href = "mail.html";
+    };
+	
+	
+</script>
+</body>
+</html>

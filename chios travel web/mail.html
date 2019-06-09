@@ -1,0 +1,85 @@
+<html>
+      <head> <title> Commute </title>
+	  <link rel="stylesheet" type="text/css" href="newstyle.css">
+	  </head>
+	  <body>
+	  <h1> Φόρμα επικοινωνίας </h1>
+	  <form name="mf" action="confirm.html" method="get" onsubmit="return validateForm()" >
+		<fieldset>
+		<legend>Στοιχεία Επικοινωνίας</legend>
+		<table>
+	  
+	  <tr><td><label for="firstname"> Ονοματεπώνυμο*:</label></td>
+	  <td><input type="text" name="firstname" id="name"></td></tr>
+     
+	 <tr><td><label for="tel">Τηλέφωνο:</label></td>
+	 <td><input type="text" size="7" name="tel" id="tel" maxlength="10" placeholder="6900000000"></td></tr>
+	 
+	 <tr><td><label for="mail"> e-mail* </label></td>
+	 <td><input type="email" name="mail" size="14" id="mail" placeholder="example@gmail.com"></td></tr>
+	 
+	 <tr><td><label for="spe"> Σχόλια:            </label></td>
+	 <td><input name="spe" id="spe" size="80" > <br></td></tr>
+	 
+	 </table>
+	 <input type="reset" value="Reset" for="name" for="tel" for="mail" for="spe">
+	 
+	<input type="submit" value="Submit" id="btn" >
+	 
+	 
+	 
+	 </fieldset>
+	 
+	 </form>
+	 <script>
+			function validateForm() {
+				var x = document.forms["mf"]["firstname"].value,y = document.forms["mf"]["tel"].value,z = document.forms["mf"]["mail"].value,s = document.forms["mf"]["spe"].value;
+				 
+				if (x=="") {
+					alert("Συμπληρωστε ονομα");
+					return false;
+					}
+				if(y=="") {
+						alert("Συμπληρωστε τηλεφωνο");
+					return false;
+				}
+				if(z=="") {
+						alert("Συμπληρωστε mail");
+					return false;
+						}
+						
+				if(s=="") {
+						alert("Συμπληρωστε το αιτημα σας");
+					return false;
+						}
+				else {	
+						window.location="confirm.html";
+					}
+			}
+					
+			
+			
+				
+				
+				
+				
+					
+				
+			
+	</script>
+	 
+	 
+	 
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </body>
+</html>

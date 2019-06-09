@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		 <title>Φόρμα Κράτησης</title>
+		 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		 <link rel="stylesheet" type="text/css" href="newstyle.css">
+		 </head>
+		
+			<body>
+			<h1> Κράτηση </h1>
+				<form name="nf" onsubmit="return validate()">
+				   <fieldset>
+					  <table>
+						<legend>Ημερομηνία</legend>
+							<tr><td><label for="1">Άφηξη:</label></td>
+							<td><select name="Δωμάτια" id="1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+										<option>31</option>
+									  </select></td><td><select name="Δωμάτια2" id="1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									  </select></td>
+									  <td><select name="Δωμάτια3" id="1">
+										<option>2017</option>
+										<option>2018</option>
+										<option>2019</option>
+										<option>2020</option>
+									  </select></td></tr>
+							<tr><td><label for="2">Αναχώρηση:</label></td>
+							<td><select name="Δωμάτια21" id="2">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+										<option>31</option>
+									  </select></td><td><select name="Δωμάτια22" id="2">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									  </select></td><td><select name="Δωμάτια23" id="2">
+										<option>2017</option>
+										<option>2018</option>
+										<option>2019</option>
+										<option>2020</option>
+									  </select></td></tr>
+					   		
+					  </table>
+					  <input type="submit" value="Submit" id="btn" >
+					</fieldset>  
+				</form> 
+					<br>
+																	<hr>
+				<form name="nf2">
+					<fieldset>
+						<table>
+						 <legend>Περισσοτερα Στοιχεια</legend>
+							<tr><td>Δωμάτια: <select name="Δωμάτια">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									  </select><br></td>
+								<td>Ενήλικες: <select name="Ενήλικες">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									  </select><br></td>
+								<td>Παιδιά: <select name="Παιδιά">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									  </select><br></td>	  
+						</table>
+					</fieldset>
+				</form>	
+			<script>
+			function validate() {
+				var x = document.forms["nf"]["Δωμάτια"].value,y = document.forms["nf"]["Δωμάτια2"].value,z = document.forms["nf"]["Δωμάτια3"].value,s = document.forms["nf"]["Δωμάτια21"].value,d= document.forms["nf"]["Δωμάτια22"].value,f= document.forms["nf"]["Δωμάτια23"].value,x1 = document.forms["nf2"]["Δωμάτια"].value,x2 = document.forms["nf2"]["Ενήλικες"].value,x3 = document.forms["nf2"]["Παιδιά"].value;
+				 
+				
+				if (z<f) {
+					alert("λαθος ημερομηνιες");
+					return false;
+					}
+				if (y>d) {
+					alert("λαθος ημερομηνιες");
+					return false;
+					}
+				if (x>s) {
+					alert("λαθος ημερομηνιες");
+					return false;
+					}
+				if (x1==1) {
+					alert("Συνολο: 80ε");
+					
+						if(x3==1) {
+							alert("επιπλεον " + 30 + "ε");
+							}
+						else if(x3==2) {
+							alert("επιπλεον " + 60 + "ε");
+							}
+						else if(x3==3) {
+							alert("επιπλεον " + 90 + "ε");
+							}	
+						else {
+						     
+							alert("επιπλεον " + 120 + "ε");
+							}
+							return false;
+				}
+				if (x1==2) {
+					alert("Συνολο: 160ε");
+						if(x3==1) {
+							alert("επιπλεον " + 30 + "ε");
+							}
+							else if(x3==2) {
+							alert("επιπλεον " + 60 + "ε");
+							}
+							else if(x3==3) {
+							alert("επιπλεον " + 90 + "ε");
+							}	
+							else {
+						     
+							alert("επιπλεον " + 120 + "ε");
+							}
+					return false;
+				}
+				if (x1==3) {
+					alert("Συνολο: 210ε");
+						if(x3==1) {
+							alert("επιπλεον " + 30 + "ε");
+							}
+						else if(x3==2) {
+							alert("επιπλεον " + 60 + "ε");
+							}
+						else if(x3==3) {
+							alert("επιπλεον " + 90 + "ε");
+							}	
+						else {
+						     
+							alert("επιπλεον " + 120 + "ε");
+							}
+					return false;
+				}
+				if (x1==4) {
+					alert("Συνολο: 270ε");
+						if(x3==1) {
+							alert("επιπλεον " + 30 + "ε");
+							}
+						else if(x3==2) {
+							alert("επιπλεον " + 60 + "ε");
+							}
+						else if(x3==3) {
+							alert("επιπλεον " + 90 + "ε");
+							}	
+						else {
+						     
+							alert("επιπλεον " + 120 + "ε");
+							}
+					return false;
+				}
+			}
+				
+				
+			</script>
+			
+			</body>	
+	<html>		
